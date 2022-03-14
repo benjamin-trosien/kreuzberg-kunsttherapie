@@ -8,7 +8,7 @@
     "lint": "ng lint",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:ci": "ng test --browsers ChromeHeadless"
+    "test:ci": "ng test --watch=false --progress=false --browsers=ChromeHeadless --code-coverage --source-map=false"
   },
   "private": true,
   "dependencies": {
@@ -40,7 +40,7 @@
     "eslint": "^7.26.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
-    "karma-chrome-launcher": "~3.1.0",
+    "karma-chrome-launcher": "^3.1.1",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
