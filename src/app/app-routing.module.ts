@@ -4,12 +4,12 @@ import {
     Routes,
 } from '@angular/router';
 
-import { TestComponent } from './test/test.component';
 import { AboutComponent } from './view/about/about.component';
 import { AppointmentComponent } from './view/appointment/appointment.component';
 import { ContactComponent } from './view/contact/contact.component';
 import { CourseComponent } from './view/course/course.component';
 import { CurrentComponent } from './view/current/current.component';
+import { HomeComponent } from './view/home/home.component';
 import { TherapyComponent } from './view/therapy/therapy.component';
 
 const routes: Routes = [
@@ -38,8 +38,8 @@ const routes: Routes = [
         component: AboutComponent,
     },
     {
-        path: '**',
-        component: TestComponent,
+        path: '',
+        component: HomeComponent,
     },
 ];
 

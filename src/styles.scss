@@ -8,6 +8,16 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+a {
+    text-decoration: none;
+
+    &:visited,
+    &:hover,
+    &:active {
+        color: inherit;
+    }
+}
+
 :root {
     --tablet-width: 905px;
 }

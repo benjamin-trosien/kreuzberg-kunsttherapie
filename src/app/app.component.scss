@@ -10,6 +10,7 @@
 
 h1 {
     margin-left: 8px;
+    cursor: pointer;
 }
 
 mat-sidenav-container {
@@ -22,4 +23,8 @@ mat-sidenav {
     @media screen and (min-width: 905px) {
         min-width: 300px;
     }
+}
+
+mat-sidenav-content {
+    padding: 24px;
 }

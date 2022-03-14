@@ -10,24 +10,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { CurrentComponent } from './view/current/current.component';
-import { TherapyComponent } from './view/therapy/therapy.component';
-import { CourseComponent } from './view/course/course.component';
+import { AboutComponent } from './view/about/about.component';
 import { AppointmentComponent } from './view/appointment/appointment.component';
 import { ContactComponent } from './view/contact/contact.component';
-import { AboutComponent } from './view/about/about.component';
+import { CourseComponent } from './view/course/course.component';
+import { CurrentComponent } from './view/current/current.component';
+import { HomeComponent } from './view/home/home.component';
+import { TherapyComponent } from './view/therapy/therapy.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        TestComponent,
         CurrentComponent,
         TherapyComponent,
         CourseComponent,
         AppointmentComponent,
         ContactComponent,
-        AboutComponent
+        AboutComponent,
+        HomeComponent
     ],
     imports: [
         AppRoutingModule,
