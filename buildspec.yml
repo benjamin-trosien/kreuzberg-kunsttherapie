@@ -8,8 +8,8 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      - npm run lint
-      - npm run test:ci
+      #- npm run lint
+      #- npm run test:ci
       - npm run build
   post_build:
     commands:
