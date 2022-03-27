@@ -17,6 +17,7 @@ import { CourseComponent } from './view/course/course.component';
 import { CurrentComponent } from './view/current/current.component';
 import { HomeComponent } from './view/home/home.component';
 import { TherapyComponent } from './view/therapy/therapy.component';
+import { ParallaxImageComponent } from './@design/parallax-image/parallax-image.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { TherapyComponent } from './view/therapy/therapy.component';
         AppointmentComponent,
         ContactComponent,
         AboutComponent,
-        HomeComponent
+        HomeComponent,
+        ParallaxImageComponent
     ],
     imports: [
         AppRoutingModule,
