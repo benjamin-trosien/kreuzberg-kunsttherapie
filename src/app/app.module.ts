@@ -18,6 +18,7 @@ import { CurrentComponent } from './view/current/current.component';
 import { HomeComponent } from './view/home/home.component';
 import { TherapyComponent } from './view/therapy/therapy.component';
 import { ParallaxImageComponent } from './@design/parallax-image/parallax-image.component';
+import { SidenavComponent } from './@design/sidenav/sidenav.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { ParallaxImageComponent } from './@design/parallax-image/parallax-image.
         ContactComponent,
         AboutComponent,
         HomeComponent,
-        ParallaxImageComponent
+        ParallaxImageComponent,
+        SidenavComponent
     ],
     imports: [
         AppRoutingModule,

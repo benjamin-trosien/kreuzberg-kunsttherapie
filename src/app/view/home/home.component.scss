@@ -12,6 +12,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+p {
+    margin: 12px;
+}
+
+img {
+    margin-bottom: 24px;
 }
 
 mat-icon {

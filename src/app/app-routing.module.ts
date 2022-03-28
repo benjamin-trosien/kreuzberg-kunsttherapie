@@ -4,41 +4,15 @@ import {
     Routes,
 } from '@angular/router';
 
-import { AboutComponent } from './view/about/about.component';
-import { AppointmentComponent } from './view/appointment/appointment.component';
-import { ContactComponent } from './view/contact/contact.component';
-import { CourseComponent } from './view/course/course.component';
-import { CurrentComponent } from './view/current/current.component';
 import { HomeComponent } from './view/home/home.component';
-import { TherapyComponent } from './view/therapy/therapy.component';
+
+export enum Path {
+    HOME = '',
+}
 
 const routes: Routes = [
     {
-        path: 'current',
-        component: CurrentComponent,
-    },
-    {
-        path: 'therapy',
-        component: TherapyComponent,
-    },
-    {
-        path: 'course',
-        component: CourseComponent,
-    },
-    {
-        path: 'appointment',
-        component: AppointmentComponent,
-    },
-    {
-        path: 'contact',
-        component: ContactComponent,
-    },
-    {
-        path: 'about',
-        component: AboutComponent,
-    },
-    {
-        path: '',
+        path: Path.HOME,
         component: HomeComponent,
     },
 ];

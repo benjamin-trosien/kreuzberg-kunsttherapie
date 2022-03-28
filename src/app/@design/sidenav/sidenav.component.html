@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <ng-container *ngIf="menu.length > 0">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </ng-container>
+    <a routerLink="/">
+        <h1>{{ title }}</h1>
+    </a>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over" fixedTopGap="56">
+        <mat-nav-list>
+            <ng-container *ngFor="let item of menu">
+                <a mat-list-item (click)="sidenav.close()" [routerLink]="item.link">{{ item.label }}</a>
+            </ng-container>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>
