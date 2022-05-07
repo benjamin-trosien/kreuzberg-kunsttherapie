@@ -17,4 +17,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: dist/ml-art-therapy
+  base-directory: dist/kreuzberg-kunsttherapie
