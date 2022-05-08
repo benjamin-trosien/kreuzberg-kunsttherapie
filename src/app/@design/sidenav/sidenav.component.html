@@ -1,19 +1,8 @@
-<mat-toolbar color="primary">
-    <ng-container *ngIf="menu.length > 0">
-        <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
-        </button>
-    </ng-container>
-    <a routerLink="/">
-        <h1>{{ title }}</h1>
-    </a>
-</mat-toolbar>
-
-<mat-sidenav-container>
-    <mat-sidenav #sidenav mode="over" fixedTopGap="56">
+<mat-sidenav-container fullscreen (backdropClick)="sidenav.close()">
+    <mat-sidenav #sidenav mode="over" (click)="sidenav.close()">
         <mat-nav-list>
-            <ng-container *ngFor="let item of menu">
-                <a mat-list-item (click)="sidenav.close()" [routerLink]="item.link">{{ item.label }}</a>
+            <ng-container *ngFor="let page of pageList">
+                <a mat-list-item [routerLink]="page.path">{{ page.title }}</a>
             </ng-container>
         </mat-nav-list>
     </mat-sidenav>

@@ -1,0 +1,16 @@
+.header {
+    display: block;
+    background-image: url("/assets/header.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    height: 300px;
+
+    mat-toolbar {
+        background: transparent;
+    }
+
+    h1 {
+        margin-left: 8px;
+        cursor: pointer;
+    }
+}

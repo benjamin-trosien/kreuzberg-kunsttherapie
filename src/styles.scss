@@ -4,13 +4,15 @@ body {
 }
 
 body {
-    margin: 0;
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background: #3c7f59;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 
     &:visited,
     &:hover,
@@ -21,4 +23,6 @@ a {
 
 :root {
     --tablet-width: 905px;
+
+    --spacing-medium: 12px;
 }

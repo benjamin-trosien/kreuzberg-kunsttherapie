@@ -1,0 +1,10 @@
+<div class="header" [style.background-image]="'url(' + headerImage + ')'">
+    <mat-toolbar>
+        <button #menuButton mat-icon-button (click)="emitMenuClick()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <a [routerLink]="PagePath.HOME">
+            <h1>{{ title }}</h1>
+        </a>
+    </mat-toolbar>
+</div>

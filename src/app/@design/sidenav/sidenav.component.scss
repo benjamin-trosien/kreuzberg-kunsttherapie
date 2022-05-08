@@ -1,26 +1,13 @@
-:host {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+mat-sidenav {
+    position: fixed;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-}
-
-h1 {
-    margin-left: 8px;
-    cursor: pointer;
-}
-
-mat-sidenav-container {
-    flex: 1;
 }
 
 mat-sidenav {
-    min-width: 100%;
-
-    @media screen and (min-width: 905px) {
-        min-width: 300px;
+    @media screen and (min-width: 768px) {
+        width: 300px;
     }
 }
