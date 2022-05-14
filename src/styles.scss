@@ -18,6 +18,7 @@ a {
     &:hover,
     &:active {
         color: inherit;
+        filter: brightness(50%);
     }
 }
 
@@ -25,4 +26,7 @@ a {
     --tablet-width: 905px;
 
     --spacing-medium: 12px;
+
+    --color-primary: palevioletred;
+    --color-text-primary: white;
 }

@@ -1,8 +1,5 @@
 <app-about></app-about>
 
 <div class="image-link-list">
-
-    <ng-container *ngFor="let page of pageList">
-        <app-image-link [page]="page"></app-image-link>
-    </ng-container>
+    <app-image-link *ngFor="let page of pageList" [page]="page"></app-image-link>
 </div>

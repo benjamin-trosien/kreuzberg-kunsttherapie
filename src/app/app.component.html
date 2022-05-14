@@ -1,4 +1,5 @@
 <app-sidenav [pageList]="pageList" [toggle$]="toggleSideNav$">
     <app-header [headerImage]="headerImage" [title]="title" (menuClicked)="toggleSideNav$.next()"></app-header>
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
 </app-sidenav>

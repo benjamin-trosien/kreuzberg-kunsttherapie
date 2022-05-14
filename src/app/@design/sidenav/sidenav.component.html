@@ -2,7 +2,9 @@
     <mat-sidenav #sidenav mode="over" (click)="sidenav.close()">
         <mat-nav-list>
             <ng-container *ngFor="let page of pageList">
-                <a mat-list-item [routerLink]="page.path">{{ page.title }}</a>
+                <a mat-list-item [routerLink]="page.path" routerLinkActive="menu-active">
+                    {{ page.title | uppercase }}
+                </a>
             </ng-container>
         </mat-nav-list>
     </mat-sidenav>

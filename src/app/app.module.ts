@@ -1,6 +1,7 @@
 import { LayoutModule } from '@angular/cdk/layout';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -14,13 +15,14 @@ import { SidenavComponent } from './@design/sidenav/sidenav.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './view/about/about.component';
+import { CourseProcessComponent } from './view/course-process/course-process.component';
+import { GroupTherapyComponent } from './view/group-therapy/group-therapy.component';
 import { HomeComponent } from './view/home/home.component';
 import { IndividualTherapyComponent } from './view/individual-therapy/individual-therapy.component';
 import { OnlineTherapyComponent } from './view/online-therapy/online-therapy.component';
-import { GroupTherapyComponent } from './view/group-therapy/group-therapy.component';
 import { PartnerAndFamiliyTherapyComponent } from './view/partner-and-familiy-therapy/partner-and-familiy-therapy.component';
 import { WorkshopsComponent } from './view/workshops/workshops.component';
-import { CourseProcessComponent } from './view/course-process/course-process.component';
+import { FooterComponent } from './@design/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -36,6 +38,7 @@ import { CourseProcessComponent } from './view/course-process/course-process.com
         PartnerAndFamiliyTherapyComponent,
         WorkshopsComponent,
         CourseProcessComponent,
+        FooterComponent,
     ],
     imports: [
         AppRoutingModule,
@@ -43,6 +46,7 @@ import { CourseProcessComponent } from './view/course-process/course-process.com
         BrowserModule,
         LayoutModule,
         MatButtonModule,
+        MatCardModule,
         MatIconModule,
         MatListModule,
         MatSidenavModule,

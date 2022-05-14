@@ -9,6 +9,10 @@ import { Page } from '../@interface/page.interface';
 export class ConfigService {
     public readonly pageList: Page[] = [
         {
+            path: PagePath.HOME,
+            title: 'Start',
+        },
+        {
             path: PagePath.INDIVIDUAL,
             title: 'Individuelle Kunsttherapie',
             image: 'assets/individual-therapy.jpeg',

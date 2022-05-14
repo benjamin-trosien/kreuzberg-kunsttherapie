@@ -1,3 +1,8 @@
+:host {
+    display: block;
+    margin: var(--spacing-medium);
+}
+
 .image-link-list {
     display: grid;
     grid-template-columns: 1fr;

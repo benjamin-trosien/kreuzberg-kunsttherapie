@@ -18,6 +18,6 @@ export class HomeComponent {
     constructor(
         private readonly configService: ConfigService,
     ) {
-        this.pageList = this.configService.pageList;
+        this.pageList = this.configService.pageList.filter(page => !!page.image);
     }
 }
