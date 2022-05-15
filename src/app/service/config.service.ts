@@ -45,5 +45,5 @@ export class ConfigService {
     ];
 
     public readonly appTitle = 'Kreuzberg-Kunsttherapie';
-    public readonly headerImage = '/assets/header.jpeg';
+    public readonly headerImage = '/assets/abstract-acrylic-background-with-blue-red-and-white.jpg';
 }

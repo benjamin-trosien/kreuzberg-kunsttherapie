@@ -1,5 +1,6 @@
 mat-card {
     background-color: var(--color-primary);
+    padding: 0;
 }
 
 a {
@@ -17,7 +18,5 @@ a {
     button {
         position: absolute;
         border-radius: 18px;
-        color: var(--color-text-primary);
-        background-color: var(--color-primary);
     }
 }

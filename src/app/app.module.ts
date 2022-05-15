@@ -9,9 +9,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { HeaderComponent } from './@design/header/header.component';
+import { FooterComponent } from './@design/footer/footer.component';
 import { ImageLinkComponent } from './@design/image-link/image-link.component';
-import { SidenavComponent } from './@design/sidenav/sidenav.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './view/about/about.component';
@@ -20,18 +19,15 @@ import { GroupTherapyComponent } from './view/group-therapy/group-therapy.compon
 import { HomeComponent } from './view/home/home.component';
 import { IndividualTherapyComponent } from './view/individual-therapy/individual-therapy.component';
 import { OnlineTherapyComponent } from './view/online-therapy/online-therapy.component';
-import { PartnerAndFamiliyTherapyComponent } from './view/partner-and-familiy-therapy/partner-and-familiy-therapy.component';
+import { PartnerAndFamiliyTherapyComponent } from './view/partner-and-family-therapy/partner-and-familiy-therapy.component';
 import { WorkshopsComponent } from './view/workshops/workshops.component';
-import { FooterComponent } from './@design/footer/footer.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
-        HeaderComponent,
         HomeComponent,
         ImageLinkComponent,
-        SidenavComponent,
         IndividualTherapyComponent,
         OnlineTherapyComponent,
         GroupTherapyComponent,

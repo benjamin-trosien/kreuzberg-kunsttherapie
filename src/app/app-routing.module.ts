@@ -10,7 +10,7 @@ import { GroupTherapyComponent } from './view/group-therapy/group-therapy.compon
 import { HomeComponent } from './view/home/home.component';
 import { IndividualTherapyComponent } from './view/individual-therapy/individual-therapy.component';
 import { OnlineTherapyComponent } from './view/online-therapy/online-therapy.component';
-import { PartnerAndFamiliyTherapyComponent } from './view/partner-and-familiy-therapy/partner-and-familiy-therapy.component';
+import { PartnerAndFamiliyTherapyComponent } from './view/partner-and-family-therapy/partner-and-familiy-therapy.component';
 import { WorkshopsComponent } from './view/workshops/workshops.component';
 
 const routes: Routes = [

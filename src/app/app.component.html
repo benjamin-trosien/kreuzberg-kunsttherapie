@@ -1,5 +1,29 @@
-<app-sidenav [pageList]="pageList" [toggle$]="toggleSideNav$">
-    <app-header [headerImage]="headerImage" [title]="title" (menuClicked)="toggleSideNav$.next()"></app-header>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
-</app-sidenav>
+<mat-sidenav-container fullscreen (backdropClick)="sidenav.close()">
+    <mat-sidenav #sidenav mode="over" (click)="sidenav.close()">
+        <mat-nav-list>
+            <a *ngFor="let page of pageList" mat-list-item [routerLink]="page.path" routerLinkActive="menu-active">
+                {{ page.title | uppercase }}
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar
+            [style.background-image]="'url(' + headerImage + ')'"
+            [style.height]="(isStartPage$ | async) ? '300px' : 'auto'"
+        >
+            <mat-toolbar-row >
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <a [routerLink]="PagePath.HOME" (click)="sidenav.close()">
+                    <h1>{{ title | uppercase }}</h1>
+                </a>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <router-outlet></router-outlet>
+
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

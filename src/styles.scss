@@ -1,10 +1,17 @@
+:root {
+    --tablet-width: 905px;
+    --desktop-width: 1440px;
+
+    --spacing-medium: 12px;
+}
+
 html,
 body {
     height: 100%;
 }
 
 body {
-    max-width: 1440px;
+    max-width: var(--desktop-width);
     position: relative;
     margin: 0 auto;
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -18,15 +25,5 @@ a {
     &:hover,
     &:active {
         color: inherit;
-        filter: brightness(50%);
     }
-}
-
-:root {
-    --tablet-width: 905px;
-
-    --spacing-medium: 12px;
-
-    --color-primary: palevioletred;
-    --color-text-primary: white;
 }
