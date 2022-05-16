@@ -13,7 +13,7 @@ import {
 } from '@angular/router';
 
 import { PagePath } from './@enum/page-path.enum';
-import { Page } from './@interface/page.interface';
+import { MenuEntry } from './@interface/menu-entry.interface';
 import { ConfigService } from './service/config.service';
 
 @Component({
@@ -24,13 +24,13 @@ import { ConfigService } from './service/config.service';
 })
 export class AppComponent {
     public title: string;
-    public pageList: Page[];
+    public menuList: MenuEntry[];
     public headerImage: string;
     public PagePath = PagePath;
 
     public readonly isStartPage$ = this.router.events.pipe(
         filter((event) => event instanceof NavigationEnd),
-        map((event) => (event as NavigationEnd).urlAfterRedirects === '/'),
+        map((event) => (event as NavigationEnd).urlAfterRedirects === `/${PagePath.HOME}`),
     );
 
     constructor(
@@ -38,7 +38,7 @@ export class AppComponent {
         private readonly router: Router,
     ) {
         this.headerImage = this.configService.headerImage;
-        this.pageList = this.configService.pageList;
         this.title = this.configService.appTitle;
+        this.menuList = this.configService.menuList;
     }
 }

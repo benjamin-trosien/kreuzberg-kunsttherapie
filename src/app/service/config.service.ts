@@ -1,49 +1,81 @@
 import { Injectable } from '@angular/core';
 
 import { PagePath } from '../@enum/page-path.enum';
-import { Page } from '../@interface/page.interface';
+import { MenuEntry } from '../@interface/menu-entry.interface';
+import { ImageLink } from '../@interface/page.interface';
 
 @Injectable({
     providedIn: 'root',
 })
 export class ConfigService {
-    public readonly pageList: Page[] = [
+    public readonly menuList: MenuEntry[] = [
         {
-            path: PagePath.HOME,
-            title: 'Start',
+            target: PagePath.HOME,
+            label: 'Start',
         },
         {
-            path: PagePath.INDIVIDUAL,
-            title: 'Individuelle Kunsttherapie',
-            image: 'assets/individual-therapy.jpeg',
+            target: PagePath.INDIVIDUAL,
+            label: 'Individuelle Kunsttherapie',
         },
         {
-            path: PagePath.ONLINE,
-            title: 'Online Kunsttherapie',
-            image: 'assets/online-therapy.jpeg',
+            target: PagePath.ONLINE,
+            label: 'Online Kunsttherapie',
         },
         {
-            path: PagePath.GROUP,
-            title: 'Gruppentherapie',
-            image: 'assets/group-therapy.jpeg',
+            target: PagePath.GROUP,
+            label: 'Gruppentherapie',
         },
         {
-            path: PagePath.PARTNER_AND_FAMILY,
-            title: 'Paar- und Familientherapie',
-            image: 'assets/partner-and-family-therapy.jpeg',
+            target: PagePath.PARTNER_AND_FAMILY,
+            label: 'Paar- und Familientherapie',
         },
         {
-            path: PagePath.WORKSHOPS,
-            title: 'Workshops',
-            image: 'assets/workshops.jpeg',
+            target: PagePath.WORKSHOPS,
+            label: 'Workshops',
         },
         {
-            path: PagePath.COURSE_PROCESS,
-            title: 'Verlauf der Therapie',
-            image: 'assets/course-process.jpeg',
+            target: PagePath.COURSE_PROCESS,
+            label: 'Verlauf der Therapie',
+        },
+        {
+            target: PagePath.APPOINTMENT,
+            label: 'Termin  buchen',
+        },
+    ];
+
+    public readonly pageList: ImageLink[] = [
+        {
+            target: PagePath.INDIVIDUAL,
+            label: 'Individuelle Kunsttherapie',
+            image: 'assets/art-hobby.jpeg',
+        },
+        {
+            target: PagePath.ONLINE,
+            label: 'Online Kunsttherapie',
+            image: 'assets/closeup-of-hand-working-with-spatula-with-acrylic.jpeg',
+        },
+        {
+            target: PagePath.GROUP,
+            label: 'Gruppentherapie',
+            image: 'assets/faculty-of-arts.jpeg',
+        },
+        {
+            target: PagePath.PARTNER_AND_FAMILY,
+            label: 'Paar- und Familientherapie',
+            image: 'assets/aerial-view-of-hand-working-with-spatula-with-acrylic.jpeg',
+        },
+        {
+            target: PagePath.WORKSHOPS,
+            label: 'Workshops',
+            image: 'assets/art-workshop.jpeg',
+        },
+        {
+            target: PagePath.COURSE_PROCESS,
+            label: 'Verlauf der Therapie',
+            image: 'assets/sculptures-of-buddha-and-yoga-mats-on-wooden-shelf.jpeg',
         },
     ];
 
     public readonly appTitle = 'Kreuzberg-Kunsttherapie';
-    public readonly headerImage = '/assets/abstract-acrylic-background-with-blue-red-and-white.jpg';
+    public readonly headerImage = '/assets/abstract-acrylic-background-with-blue-red-and-white.jpeg';
 }

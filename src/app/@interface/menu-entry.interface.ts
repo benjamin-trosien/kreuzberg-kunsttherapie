@@ -1,7 +1,6 @@
 import { PagePath } from '../@enum/page-path.enum';
 
-export interface ImageLink {
-    image: string;
+export interface MenuEntry {
     label: string;
     target: PagePath;
 }

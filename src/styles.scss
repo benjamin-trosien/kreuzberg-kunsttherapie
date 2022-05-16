@@ -1,7 +1,6 @@
-:root {
-    --tablet-width: 905px;
-    --desktop-width: 1440px;
+@use 'screen';
 
+:root {
     --spacing-medium: 12px;
 }
 
@@ -11,7 +10,7 @@ body {
 }
 
 body {
-    max-width: var(--desktop-width);
+    max-width: screen.$large;
     position: relative;
     margin: 0 auto;
     font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -26,4 +25,8 @@ a {
     &:active {
         color: inherit;
     }
+}
+
+button[mat-raised-button] {
+    border-radius: 18px;
 }

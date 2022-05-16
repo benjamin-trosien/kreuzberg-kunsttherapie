@@ -1,3 +1,9 @@
-.menu-active {
-    background-color: var(--primary-color);
+@use 'src/screen';
+
+mat-sidenav {
+    width: 100%;
+
+    @media screen and (min-width: #{screen.$xsmall}) {
+        width: 300px;
+    }
 }

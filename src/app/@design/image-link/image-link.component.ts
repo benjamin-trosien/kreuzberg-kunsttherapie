@@ -4,7 +4,7 @@ import {
     Input,
 } from '@angular/core';
 
-import { Page } from '../../@interface/page.interface';
+import { ImageLink } from '../../@interface/page.interface';
 
 @Component({
     selector: 'app-image-link',
@@ -13,5 +13,5 @@ import { Page } from '../../@interface/page.interface';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImageLinkComponent {
-    @Input() public page!: Page;
+    @Input() public imageLink!: ImageLink;
 }

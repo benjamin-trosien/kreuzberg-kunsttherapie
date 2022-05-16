@@ -3,7 +3,8 @@ import {
     Component,
 } from '@angular/core';
 
-import { Page } from '../../@interface/page.interface';
+import { PagePath } from '../../@enum/page-path.enum';
+import { ImageLink } from '../../@interface/page.interface';
 import { ConfigService } from '../../service/config.service';
 
 @Component({
@@ -13,11 +14,12 @@ import { ConfigService } from '../../service/config.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
-    public readonly pageList: Page[];
+    public readonly linkList: ImageLink[];
+    public readonly PagePath = PagePath;
 
     constructor(
         private readonly configService: ConfigService,
     ) {
-        this.pageList = this.configService.pageList.filter(page => !!page.image);
+        this.linkList = this.configService.pageList;
     }
 }

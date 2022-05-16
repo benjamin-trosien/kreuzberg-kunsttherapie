@@ -5,12 +5,13 @@ import {
 } from '@angular/router';
 
 import { PagePath } from './@enum/page-path.enum';
+import { AppointmentComponent } from './view/appointment/appointment.component';
 import { CourseProcessComponent } from './view/course-process/course-process.component';
 import { GroupTherapyComponent } from './view/group-therapy/group-therapy.component';
 import { HomeComponent } from './view/home/home.component';
 import { IndividualTherapyComponent } from './view/individual-therapy/individual-therapy.component';
 import { OnlineTherapyComponent } from './view/online-therapy/online-therapy.component';
-import { PartnerAndFamiliyTherapyComponent } from './view/partner-and-family-therapy/partner-and-familiy-therapy.component';
+import { PartnerAndFamilyTherapyComponent } from './view/partner-and-family-therapy/partner-and-family-therapy.component';
 import { WorkshopsComponent } from './view/workshops/workshops.component';
 
 const routes: Routes = [
@@ -32,7 +33,7 @@ const routes: Routes = [
     },
     {
         path: PagePath.PARTNER_AND_FAMILY,
-        component: PartnerAndFamiliyTherapyComponent,
+        component: PartnerAndFamilyTherapyComponent,
     },
     {
         path: PagePath.WORKSHOPS,
@@ -42,11 +43,24 @@ const routes: Routes = [
         path: PagePath.COURSE_PROCESS,
         component: CourseProcessComponent,
     },
+    {
+        path: PagePath.APPOINTMENT,
+        component: AppointmentComponent,
+    },
+    {
+        path: '',
+        redirectTo: PagePath.HOME,
+        pathMatch: 'full',
+    },
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(routes),
+        RouterModule.forRoot(routes, {
+            scrollPositionRestoration: 'enabled',
+            anchorScrolling: 'enabled',
+            // scrollOffset: [ 0, 25 ], // cool option, or ideal option when you have a fixed header on top.
+        }),
     ],
     exports: [
         RouterModule,

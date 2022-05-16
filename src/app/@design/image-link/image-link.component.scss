@@ -1,9 +1,5 @@
 mat-card {
-    background-color: var(--color-primary);
     padding: 0;
-}
-
-a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -17,6 +13,6 @@ a {
 
     button {
         position: absolute;
-        border-radius: 18px;
+        bottom: 20%;
     }
 }

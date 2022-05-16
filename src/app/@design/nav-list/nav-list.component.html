@@ -1,0 +1,11 @@
+<mat-nav-list>
+    <ng-container *ngFor="let entry of entryList">
+        <a mat-list-item [routerLink]="entry.target" routerLinkActive="menu-active">
+            {{ entry.label | uppercase }}
+        </a>
+    </ng-container>
+
+    <mat-divider></mat-divider>
+
+    <button mat-raised-button color="primary">Termin buchen</button>
+</mat-nav-list>

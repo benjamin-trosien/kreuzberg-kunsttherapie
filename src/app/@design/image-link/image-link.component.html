@@ -1,6 +1,6 @@
-<mat-card>
-    <a [routerLink]="page?.path">
-        <img [src]="page?.image" alt="image-link" loading="lazy">
-        <button mat-raised-button color="primary">{{ page?.title | uppercase }}</button>
-    </a>
-</mat-card>
+<a [routerLink]="['/', imageLink?.target]">
+    <mat-card>
+        <img [src]="imageLink?.image" alt="image-link" loading="lazy">
+        <button mat-raised-button color="primary">{{ imageLink?.label | uppercase }}</button>
+    </mat-card>
+</a>

@@ -1,3 +1,5 @@
+@use 'src/screen';
+
 :host {
     display: block;
     margin: var(--spacing-medium);
@@ -8,11 +10,11 @@
     grid-template-columns: 1fr;
     gap: var(--spacing-medium);
 
-    @media screen and (min-width: 905px) {
+    @media screen and (min-width: #{screen.$small}) {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: #{screen.$large}) {
         grid-template-columns: repeat(3, 1fr);
     }
 }
