@@ -45,10 +45,6 @@ export class ConfigService {
             target: PagePath.COURSE_PROCESS,
             label: 'Verlauf einer Sitzung',
         },
-        {
-            target: PagePath.APPOINTMENT,
-            label: 'Termin  buchen',
-        },
     ];
 
     public readonly pageList: ImageLink[] = [

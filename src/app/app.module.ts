@@ -15,6 +15,7 @@ import { ImageLinkComponent } from './@design/image-link/image-link.component';
 import { NavListComponent } from './@design/nav-list/nav-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutArtTherapyComponent } from './view/about-art-therapy/about-art-therapy.component';
 import { AppointmentComponent } from './view/appointment/appointment.component';
 import { CourseProcessComponent } from './view/course-process/course-process.component';
 import { GroupTherapyComponent } from './view/group-therapy/group-therapy.component';
@@ -23,10 +24,10 @@ import { IndividualTherapyComponent } from './view/individual-therapy/individual
 import { OnlineTherapyComponent } from './view/online-therapy/online-therapy.component';
 import { PartnerAndFamilyTherapyComponent } from './view/partner-and-family-therapy/partner-and-family-therapy.component';
 import { WorkshopsComponent } from './view/workshops/workshops.component';
-import { AboutArtTherapyComponent } from './view/about-art-therapy/about-art-therapy.component';
 
 @NgModule({
     declarations: [
+        AboutArtTherapyComponent,
         AppComponent,
         AppointmentComponent,
         CourseProcessComponent,
@@ -35,11 +36,10 @@ import { AboutArtTherapyComponent } from './view/about-art-therapy/about-art-the
         HomeComponent,
         ImageLinkComponent,
         IndividualTherapyComponent,
+        NavListComponent,
         OnlineTherapyComponent,
         PartnerAndFamilyTherapyComponent,
         WorkshopsComponent,
-        NavListComponent,
-        AboutArtTherapyComponent,
     ],
     imports: [
         AppRoutingModule,

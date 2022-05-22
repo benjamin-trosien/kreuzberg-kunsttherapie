@@ -4,6 +4,7 @@ mat-nav-list {
 }
 
 button[mat-raised-button] {
+    width: calc(100% - 2*#{var(--spacing-medium)});
     margin: var(--spacing-medium);
 }
 
