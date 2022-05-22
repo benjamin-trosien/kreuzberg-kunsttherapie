@@ -14,6 +14,14 @@ export class ConfigService {
             label: 'Start',
         },
         {
+            target: PagePath.ABOUT_ME,
+            label: 'Über mich',
+        },
+        {
+            target: PagePath.ABOUT_ART_THERAPY,
+            label: 'Was ist Kunsttherapie',
+        },
+        {
             target: PagePath.INDIVIDUAL,
             label: 'Individuelle Kunsttherapie',
         },
@@ -35,7 +43,7 @@ export class ConfigService {
         },
         {
             target: PagePath.COURSE_PROCESS,
-            label: 'Verlauf der Therapie',
+            label: 'Verlauf einer Sitzung',
         },
         {
             target: PagePath.APPOINTMENT,

@@ -2,10 +2,12 @@
 
 :root {
     --spacing-medium: 12px;
+    --spacing-large: 24px;
 }
 
 html,
 body {
+    background-color: var(--color-background);
     height: 100%;
 }
 
@@ -29,4 +31,9 @@ a {
 
 button[mat-raised-button] {
     border-radius: 18px;
+}
+
+section {
+    // margin-bottom: var(--spacing-large);
+    padding: var(--spacing-medium);
 }

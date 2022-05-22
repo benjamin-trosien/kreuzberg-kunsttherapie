@@ -14,7 +14,4 @@ import { MenuEntry } from '../../@interface/menu-entry.interface';
 })
 export class NavListComponent {
     @Input() entryList?: MenuEntry[];
-    constructor() {
-        console.log('sdd');
-    }
 }

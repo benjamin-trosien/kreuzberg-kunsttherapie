@@ -1,3 +1,5 @@
+@use 'src/screen';
+
 :host {
     display: flex;
     flex-direction: column;
@@ -6,8 +8,17 @@
     padding: var(--spacing-medium);
     color: var(--color-text-primary);
     background-color: var(--color-primary);
+
+    @media screen and (min-width: screen.$medium) {
+        flex-direction: row;
+    }
 }
 
 a:not(:last-child) {
     margin-bottom: var(--spacing-medium);
+
+    @media screen and (min-width: screen.$medium) {
+        margin-bottom: 0;
+        margin-right: var(--spacing-medium);
+    }
 }

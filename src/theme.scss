@@ -246,3 +246,15 @@ $altTheme: (
         font-family: 'Roboto';
     }
 }
+
+:root {
+    --color-background: #{$dark-background};
+    // --color-accent: #{mat-color($app-accent)};
+    // --color-warn: #{mat-color($app-warn)};
+    // --color-success: #{mat-color($app-success)};
+}
+.theme-alternate {
+    :root {
+        --color-background: #{$light-background};
+    }
+}

@@ -5,6 +5,8 @@ import {
 } from '@angular/router';
 
 import { PagePath } from './@enum/page-path.enum';
+import { AboutArtTherapyComponent } from './view/about-art-therapy/about-art-therapy.component';
+import { AboutMeComponent } from './view/about-me/about-me.component';
 import { AppointmentComponent } from './view/appointment/appointment.component';
 import { CourseProcessComponent } from './view/course-process/course-process.component';
 import { GroupTherapyComponent } from './view/group-therapy/group-therapy.component';
@@ -46,6 +48,14 @@ const routes: Routes = [
     {
         path: PagePath.APPOINTMENT,
         component: AppointmentComponent,
+    },
+    {
+        path: PagePath.ABOUT_ME,
+        component: AboutMeComponent,
+    },
+    {
+        path: PagePath.ABOUT_ART_THERAPY,
+        component: AboutArtTherapyComponent,
     },
     {
         path: '',
