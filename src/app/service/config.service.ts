@@ -75,7 +75,7 @@ export class ConfigService {
         {
             target: PagePath.WORKSHOPS,
             label: 'Workshops',
-            image: 'assets/art-workshop.jpeg',
+            image: 'assets/workshops.jpeg',
         },
         {
             target: PagePath.COURSE_PROCESS,
@@ -85,5 +85,5 @@ export class ConfigService {
     ];
 
     public readonly appTitle = 'Kreuzberg-Kunsttherapie';
-    public readonly headerImage = '/assets/abstract-acrylic-background-with-blue-red-and-white.jpeg';
+    public readonly headerImage = '/assets/header.jpeg';
 }

@@ -33,6 +33,11 @@ export class AppComponent {
         map((event) => (event as NavigationEnd).urlAfterRedirects === `/${PagePath.HOME}`),
     );
 
+    public readonly showAppointmentButton$ = this.router.events.pipe(
+        filter((event) => event instanceof NavigationEnd),
+        map((event) => (event as NavigationEnd).urlAfterRedirects !== `/${PagePath.APPOINTMENT}`),
+    );
+
     constructor(
         private readonly configService: ConfigService,
         private readonly router: Router,

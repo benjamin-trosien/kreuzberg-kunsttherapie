@@ -7,3 +7,25 @@ mat-sidenav {
         width: 300px;
     }
 }
+
+.appointment-wrapper {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-background);
+
+    a {
+        width: calc(100% - 2*#{var(--spacing-medium)});
+        align-self: center;
+        margin: var(--spacing-medium);
+
+        @media screen and (min-width: #{screen.$xsmall}) {
+            width: 300px;
+        }
+    }
+    button {
+        width: 100%;
+    }
+}

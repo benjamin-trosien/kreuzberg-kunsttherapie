@@ -20,6 +20,13 @@
 
         <router-outlet></router-outlet>
 
+        <div *ngIf="showAppointmentButton$ | async" class="appointment-wrapper">
+            <mat-divider></mat-divider>
+            <a [routerLink]="PagePath.APPOINTMENT">
+                <button mat-raised-button color="primary">Termin buchen</button>
+            </a>
+        </div>
+        <mat-divider></mat-divider>
         <app-footer></app-footer>
     </mat-sidenav-content>
 </mat-sidenav-container>

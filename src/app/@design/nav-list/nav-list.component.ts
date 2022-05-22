@@ -4,6 +4,7 @@ import {
     Input,
 } from '@angular/core';
 
+import { PagePath } from '../../@enum/page-path.enum';
 import { MenuEntry } from '../../@interface/menu-entry.interface';
 
 @Component({
@@ -14,4 +15,6 @@ import { MenuEntry } from '../../@interface/menu-entry.interface';
 })
 export class NavListComponent {
     @Input() entryList?: MenuEntry[];
+
+    public PagePath = PagePath;
 }

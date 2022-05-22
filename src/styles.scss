@@ -4,7 +4,9 @@
     --spacing-medium: 12px;
     --spacing-large: 24px;
 }
-
+* {
+    box-sizing: border-box;
+}
 html,
 body {
     background-color: var(--color-background);
