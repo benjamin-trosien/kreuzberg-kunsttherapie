@@ -29,6 +29,15 @@ a {
     }
 }
 
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 button[mat-raised-button] {
     border-radius: 18px;
 }
